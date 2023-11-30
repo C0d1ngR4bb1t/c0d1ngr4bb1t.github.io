@@ -4,9 +4,6 @@ if (window.localStorage.getItem("remember_alerts") == '0') {
     alert("Here you will find my projects, some javascript bookmarklets...\nHope you like them!");
     alert("Remember to star my projects if you like them :P");
     window.localStorage.setItem("remember_alerts", "1");
-}; else if (window.localStorage.getItem("remember_alerts") == "1") {
-    return;
-}; else {
-//    console.log("Invalid LocalStorage Value. Resetting...");
-    window.localStorage.setItem('remember_alerts', '0');
+} else {
+    console.log("Not showing up alerts.");
 }
