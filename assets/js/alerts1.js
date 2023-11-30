@@ -1,4 +1,5 @@
-window.localStorage.setItem('remember_alerts', '0');
+// testing purposes:
+// window.localStorage.setItem('remember_alerts', '0');
 if (window.localStorage.getItem("remember_alerts") == '0') {
     alert("Welcome to C0d1ngR4bb1t!");
     alert("Here you will find my projects, some javascript bookmarklets...\nHope you like them!");
