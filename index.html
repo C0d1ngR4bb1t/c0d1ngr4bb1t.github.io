@@ -6,8 +6,10 @@
   <body>
     <h1 align="center">C0d1ngR4bb1t's HomePage</h1>
     <img src="https://img.shields.io/badge/Deploy-PASS-green?style=plastic&link=https%3A%2F%2Fc0d1ngr4bb1t.github.io%2F" alt="badge">
+    <button onclick="unskipAlerts()">Show up alerts again</button>
     <h2>About Me</h2>
     <a href="aboutme.html">About Me page</a>
     <script src="assets/js/alerts1.js"></script>
+    <script>function unskipAlerts() { localStorage["remember_alerts"] = '0'; document.location.reload();}</script>
   </body>
 </html>
