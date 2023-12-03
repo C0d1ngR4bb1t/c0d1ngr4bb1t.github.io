@@ -1,5 +1,5 @@
 // Credit: https://codepen.io/massiebn/pen/OJMbXz
-// BLACK SNOW
+// WHITE SNOW
 
 /** @license
  * DHTML Snowstorm! JavaScript-based snow for web pages
@@ -20,15 +20,15 @@ var snowStorm = (function(window, document) {
 
   this.autoStart = true;          // Whether the snow should start automatically or not.
   this.excludeMobile = false;      // Snow is likely to be bad news for mobile phones' CPUs (and batteries.) Enable at your own risk.
-  this.flakesMax = 128;           // Limit total amount of snow made (falling + sticking)
-  this.flakesMaxActive = 64;      // Limit amount of snow falling at once (less = lower CPU use)
+  this.flakesMax = 256;           // Limit total amount of snow made (falling + sticking)
+  this.flakesMaxActive = 128;      // Limit amount of snow falling at once (less = lower CPU use)
   this.animationInterval = 50;    // Theoretical "miliseconds per frame" measurement. 20 = fast + smooth, but high CPU use. 50 = more conservative, but slower
   this.useGPU = true;             // Enable transform-based hardware acceleration, reduce CPU load.
   this.className = null;          // CSS class name for further customization on snow elements
-  this.excludeMobile = true;      // Snow is likely to be bad news for mobile phones' CPUs (and batteries.) By default, be nice.
+  this.excludeMobile = false;      // Snow is likely to be bad news for mobile phones' CPUs (and batteries.) By default, be nice.
   this.flakeBottom = null;        // Integer for Y axis snow limit, 0 or null for "full-screen" snow effect
-  this.followMouse = true;        // Snow movement can respond to the user's mouse
-  this.snowColor = '#000000';        // Don't eat (or use?) yellow snow.
+  this.followMouse = false;        // Snow movement can respond to the user's mouse
+  this.snowColor = '#ffffff';        // Don't eat (or use?) yellow snow.
   this.snowCharacter = '&bull;';  // &bull; = bullet, &middot; is square on some systems etc.
   this.snowStick = true;          // Whether or not snow should "stick" at the bottom. When off, will never collect.
   this.targetElement = null;      // element which snow will be appended to (null = document.body) - can be an element ID eg. 'myDiv', or a DOM node reference
