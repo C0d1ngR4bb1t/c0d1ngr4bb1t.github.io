@@ -1,5 +1,5 @@
 // Credit: https://codepen.io/massiebn/pen/OJMbXz
-// WHITE SNOW
+// BLACK SNOW
 
 /** @license
  * DHTML Snowstorm! JavaScript-based snow for web pages
